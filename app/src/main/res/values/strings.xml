@@ -38,4 +38,17 @@ como skate, slack line e dentre outras modalidades
         \n
 </string>
     <string name="potencial_turistico">Potencial Turistico</string>
+    <string name="Estrutura">-palco\n-som\n-iluminação\n-grades\n-microfones\n-controladora de som</string>
+    <string name="lucrotext">O UnderFest visa exlorar esse potencial enorme da cidade e a crescente no turismo, trazendo mais atrações de diversos nixos enterligados que atraem pessoas do Brasil inteiro.\n
+\n
+A ideia do turismo convencional que a cidade vem trazendo nos ultimos anos, sem duvidas, tem funcionado de maneira exemplar… Porém com a volta forte de eventos acontecendo pais a fora, mais jovens atingido idades e liberdade financeiras, eventos desse porte podem ser uma maneira, outrora ignorada na cidade, extremamente interessante para se investir.\n
+\n
+Além disso, executar esse evento em datas onde o turismo convencional atual em baixa, é uma estratégia pensada para eliminar essas baixas que por sua vez, dobrará o movimento turistico na cidade. O UnderFest é um evento com potencial enorme de colocar Foz do Iguaçu no calendario nacional de festivais.\n
+\n
+Já falamos do potencial turistico e cultural para a cidade, mas de quantos reais serão gastos ao todo para a execução deste festival ? Pela nossas apurações entre estrutura e atrações serão gastos em torno de 178mil reais, com lucros previsto para 250mil à 300mil em sua primeirissima edição.\n
+</string>
+    <string name="custo_total">Custo total: 178.000R$\n lucro previsto:300.000R$</string>
+    <string name="estrutura_do_evento">Estrutura do evento</string>
+    <string name="_25_000_r">25.000 R$</string>
+    <string name="cach_artistas_e_alcance">cachê, artistas e alcance</string>
 </resources>

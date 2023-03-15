@@ -1,14 +1,14 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.underfestival.Adapter
 
-import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.underfestival.Fragments.Inicio
-import com.example.underfestival.Fragments.Potencial
-import com.example.underfestival.Fragments.Projeto
+import com.example.underfestival.Fragments.*
 
-internal class TabAdapter(var context: Context, fm: FragmentManager, var TotalTabs: Int) :
+@Suppress("DEPRECATION")
+internal class TabAdapter(fm: FragmentManager, var TotalTabs: Int) :
     FragmentPagerAdapter(fm) {
     override fun getCount(): Int {
         return TotalTabs
@@ -26,6 +26,18 @@ internal class TabAdapter(var context: Context, fm: FragmentManager, var TotalTa
 
             2 -> {
                 Potencial()
+            }
+
+            3 -> {
+                Artistas()
+            }
+
+            4 -> {
+                Estrutura()
+            }
+
+            5 -> {
+                Lucro()
             }
             else -> getItem(position)
         }

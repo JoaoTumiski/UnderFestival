@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_artistas"
+    tools:context=".Fragments.Artistas">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/staatliches"
+            android:text="@string/cach_artistas_e_alcance"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/background_artista"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/background_artista"
+            android:layout_width="270dp"
+            android:layout_height="370dp"
+            android:layout_marginTop="70dp"
+            android:elevation="8dp"
+            android:background="@drawable/custom_card"
+            android:backgroundTint="@color/pink"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:id="@+id/linha_seguidores"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/custom_view_top"
+            android:backgroundTint="@color/light_gray"
+            app:layout_constraintBottom_toTopOf="@id/linha_inscritos"
+            app:layout_constraintEnd_toEndOf="@id/background_artista"
+            app:layout_constraintStart_toStartOf="@id/background_artista" />
+
+        <View
+            android:id="@+id/linha_inscritos"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/linha_ouvintes"
+            app:layout_constraintEnd_toEndOf="@id/background_artista"
+            app:layout_constraintStart_toStartOf="@id/background_artista" />
+
+        <View
+            android:id="@+id/linha_ouvintes"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/light_gray"
+            app:layout_constraintBottom_toTopOf="@id/linha_cache"
+            app:layout_constraintEnd_toEndOf="@id/background_artista"
+            app:layout_constraintStart_toStartOf="@id/background_artista" />
+
+        <View
+            android:id="@+id/linha_cache"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_view_bottom"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/background_artista"
+            app:layout_constraintEnd_toEndOf="@id/background_artista"
+            app:layout_constraintStart_toStartOf="@id/background_artista" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

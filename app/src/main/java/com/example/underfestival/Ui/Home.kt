@@ -29,11 +29,13 @@ class Home : AppCompatActivity(){
         tabLayout.addTab(tabLayout.newTab().setText("Under Festival"))
         tabLayout.addTab(tabLayout.newTab().setText("Projeto"))
         tabLayout.addTab(tabLayout.newTab().setText("Potencial"))
+        tabLayout.addTab(tabLayout.newTab().setText("Artistas"))
+        tabLayout.addTab(tabLayout.newTab().setText("Estrutura"))
+        tabLayout.addTab(tabLayout.newTab().setText("Lucro"))
         tabLayout.tabGravity = TabLayout.GRAVITY_CENTER
 
         val adapter = TabAdapter(
-            this, supportFragmentManager,
-            tabLayout.tabCount
+            supportFragmentManager, tabLayout.tabCount
         )
         viewPager.adapter = adapter
 
