@@ -3,7 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="projeto">Foz do Iguaçu é, por si só, uma cidade multicultural, e dentro dessas culturas
-encontramos algumas subculturas, que por usa vez meio que exclui o undergorund.\n
+encontramos algumas subculturas, que por sua vez meio que exclui o undergorund.\n
 \n
 O interessante de observar é que o cenário Underground da cidade é amplo e tem seus
 movimentos, mas, ao mesmo tempo, é divido.\n
@@ -20,10 +20,10 @@ a ideia desse projeto. Para dar maior ênfase a uma cultura pouco explorada e ap
         Com o UnderFest pretendemos movimentar no minimo 8000 à 10000 pessoas, colocando um \'\'pim\'\'
         na cidade como atração para este publico. Além de um festival musical, teremos diversos tipos de
         interação com o publico que vai de slack line à competições de dança. Re-lembrando Foz em sua época
-        que foi a sediadora do Xgames, pretendemos organizar um campeonado de skate, acontecendo entre um show
+        que foi a sediadora do Xgames, pretendemos organizar um campeonato de skate, acontecendo entre um show
         principal e outro.   O UnderFest é a iniciativa que vai movimentar o turismo na cidade em datas
         onde se tem mais baixas nesse setor, além de definitivamente e merecidamente tornar Foz do Iguaçu
-        um ponto turistimo muito além das magnificas Cataratas do Iguaçu.\n
+        um ponto turistico muito além das magnificas Cataratas do Iguaçu.\n
     \n
     \n
     O UnderFest, em sua primeira edição, será uma festa com músicos do cenário Hip Hop\n
@@ -39,7 +39,7 @@ como skate, slack line e dentre outras modalidades
 </string>
     <string name="potencial_turistico">Potencial Turistico</string>
     <string name="Estrutura">-palco\n-som\n-iluminação\n-grades\n-microfones\n-controladora de som</string>
-    <string name="lucrotext">O UnderFest visa exlorar esse potencial enorme da cidade e a crescente no turismo, trazendo mais atrações de diversos nixos enterligados que atraem pessoas do Brasil inteiro.\n
+    <string name="lucrotext">O UnderFest visa explorar esse potencial enorme da cidade e a crescente no turismo, trazendo mais atrações de diversos nichos interligados que atraem pessoas do Brasil inteiro.\n
 \n
 A ideia do turismo convencional que a cidade vem trazendo nos ultimos anos, sem duvidas, tem funcionado de maneira exemplar… Porém com a volta forte de eventos acontecendo pais a fora, mais jovens atingido idades e liberdade financeiras, eventos desse porte podem ser uma maneira, outrora ignorada na cidade, extremamente interessante para se investir.\n
 \n
@@ -49,6 +49,12 @@ Já falamos do potencial turistico e cultural para a cidade, mas de quantos reai
 </string>
     <string name="custo_total">Custo total: 178.000R$\n lucro previsto:300.000R$</string>
     <string name="estrutura_do_evento">Estrutura do evento</string>
-    <string name="_25_000_r">25.000 R$</string>
+    <string name="valor_estrutura">25.000 R$</string>
     <string name="cach_artistas_e_alcance">cachê, artistas e alcance</string>
+    <string name="locacao">Locação:Centro de convenções</string>
+    <string name="valor_locacao">10.000 R$</string>
+    <string name="stands_e_estruturas">Stands e estruturas de\n entretenimento</string>
+    <string name="seguranc">Segurança e equipe medica</string>
+    <string name="valor_total">55.000 R$</string>
+    <string name="gasto_total">gasto total em\n estrutura e segurança</string>
 </resources>
