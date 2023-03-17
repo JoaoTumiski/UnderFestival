@@ -2,13 +2,16 @@ package com.example.underfestival.Ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import androidx.viewpager.widget.ViewPager
 import com.example.underfestival.Adapter.TabAdapter
+import com.example.underfestival.Fragments.Artistas
 import com.example.underfestival.R
 import com.example.underfestival.databinding.ActivityHomeBinding
 import com.google.android.material.tabs.TabLayout
 
-class Home : AppCompatActivity(){
+class Home : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
 
     private lateinit var tabLayout: TabLayout
@@ -21,10 +24,17 @@ class Home : AppCompatActivity(){
 
         supportActionBar?.hide()
 
+        val ArtistasFragment = Artistas()
+
+        val fragmentManager: FragmentManager = supportFragmentManager
+        val fragmentTransition: FragmentTransaction = fragmentManager.beginTransaction()
+
+        fragmentTransition.replace(R.id.activity_main, ArtistasFragment).commit()
+
         //tab View
 
         tabLayout = findViewById(R.id.tabLayout)
-        viewPager = findViewById(R.id.ViewPager)
+        viewPager = findViewById(R.id.activity_main)
 
         tabLayout.addTab(tabLayout.newTab().setText("Under Festival"))
         tabLayout.addTab(tabLayout.newTab().setText("Projeto"))
@@ -52,7 +62,5 @@ class Home : AppCompatActivity(){
             }
 
         })
-
     }
-
 }
