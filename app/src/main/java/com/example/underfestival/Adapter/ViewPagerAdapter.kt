@@ -5,23 +5,22 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
+
 import androidx.recyclerview.widget.RecyclerView
 import com.example.underfestival.R
 
-class ViewPagerAdapter(private var title: List<String>, private var details: List<String>, private var images: List<Int>): RecyclerView.Adapter<ViewPagerAdapter.Pager2ViewHolder>(){
+class ViewPagerAdapter(private var seguidores: List<String>, private var inscritos: List<String>,
+                       private var ouvintes: List<String>, private var cache: List<String>,private var nome: List<String>,
+                       private var images: List<Int>): RecyclerView.Adapter<ViewPagerAdapter.Pager2ViewHolder>(){
 
     inner class Pager2ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
-        val itemTitle: TextView = itemView.findViewById(R.id.tvTitle)
-        val itemDetails: TextView = itemView.findViewById(R.id.tvAbout)
-        val itemImage: ImageView = itemView.findViewById(R.id.tvImage)
-
-        init {
-            itemImage.setOnClickListener{
-                v: View -> val position = adapterPosition
-            }
-        }
+        val itemSeguidores: TextView = itemView.findViewById(R.id.Seguidores)
+        val itemInscritos: TextView = itemView.findViewById(R.id.Inscritos)
+        val itemOuvintes: TextView = itemView.findViewById(R.id.ouvintes)
+        val itemCache: TextView = itemView.findViewById(R.id.cache)
+        val itemNome: TextView = itemView.findViewById(R.id.NomeArtista)
+        val itemImage: ImageView = itemView.findViewById(R.id.ArtistaImage)
 
     }
 
@@ -34,12 +33,15 @@ class ViewPagerAdapter(private var title: List<String>, private var details: Lis
 
     override fun onBindViewHolder(holder:ViewPagerAdapter.Pager2ViewHolder, position: Int) {
         holder.itemImage.setImageResource(images[position])
-        holder.itemTitle.text = title[position]
-        holder.itemDetails.text = details[position]
+        holder.itemSeguidores.text = seguidores[position]
+        holder.itemInscritos.text = inscritos[position]
+        holder.itemOuvintes.text = ouvintes[position]
+        holder.itemCache.text = cache[position]
+        holder.itemNome.text = nome[position]
     }
 
     override fun getItemCount(): Int {
-        return title.size
+        return cache.size
     }
 
 }

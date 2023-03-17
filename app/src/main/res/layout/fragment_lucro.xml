@@ -37,7 +37,7 @@
                 android:layout_below="@id/text_potencial"
                 android:padding="15dp"
                 android:text="@string/custo_total"
-                android:textColor="@color/white"
+                android:textColor="@color/pink"
                 android:textSize="20sp" />
 
 

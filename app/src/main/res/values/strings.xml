@@ -50,11 +50,15 @@ Já falamos do potencial turistico e cultural para a cidade, mas de quantos reai
     <string name="custo_total">Custo total: 178.000R$\n lucro previsto:300.000R$</string>
     <string name="estrutura_do_evento">Estrutura do evento</string>
     <string name="valor_estrutura">25.000 R$</string>
-    <string name="cach_artistas_e_alcance">cachê, artistas e alcance</string>
     <string name="locacao">Locação:Centro de convenções</string>
     <string name="valor_locacao">10.000 R$</string>
     <string name="stands_e_estruturas">Stands e estruturas de\n entretenimento</string>
     <string name="seguranc">Segurança e equipe medica</string>
     <string name="valor_total">55.000 R$</string>
     <string name="gasto_total">gasto total em\n estrutura e segurança</string>
+    <string name="cache">cache</string>
+    <string name="ouvintes">ouvintes</string>
+    <string name="inscritos">inscritos</string>
+    <string name="seguidores">Seguidores</string>
+    <string name="nome">Nome</string>
 </resources>
