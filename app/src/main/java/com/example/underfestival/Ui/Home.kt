@@ -28,7 +28,6 @@ class Home : AppCompatActivity() {
 
         val fragmentManager: FragmentManager = supportFragmentManager
         val fragmentTransition: FragmentTransaction = fragmentManager.beginTransaction()
-
         fragmentTransition.replace(R.id.activity_main, ArtistasFragment).commit()
 
         //tab View

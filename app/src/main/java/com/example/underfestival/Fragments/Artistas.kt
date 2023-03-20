@@ -29,6 +29,7 @@ class Artistas : Fragment() {
     ): View {
         _binding = FragmentArtistasBinding.inflate(inflater, container, false)
         return binding.root
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,6 +47,7 @@ class Artistas : Fragment() {
 
         val indicator = binding.indicator
         indicator.setViewPager2(view_pager2)
+
     }
 
     private fun addToList(seguidores: String, inscritos: String, ouvintes: String, caches: String, nomes: String, image: Int) {

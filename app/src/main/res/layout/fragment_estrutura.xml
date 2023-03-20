@@ -34,7 +34,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/staatliches"
+                android:fontFamily="@font/gilroy_extrabold"
                 android:text="@string/estrutura_do_evento"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -46,7 +46,7 @@
                 android:layout_below="@id/title_estrutura"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/staatliches"
+                android:fontFamily="@font/gilroy_medium"
                 android:text="@string/Estrutura"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
@@ -58,7 +58,7 @@
                 android:layout_below="@id/text_estrutura"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/staatliches"
+                android:fontFamily="@font/gilroy_extrabold"
                 android:text="@string/valor_estrutura"
                 android:textColor="@color/pink"
                 android:textSize="20sp" />
@@ -70,7 +70,7 @@
                 android:layout_below="@id/valorEstrutura"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/staatliches"
+                android:fontFamily="@font/gilroy_medium"
                 android:text="@string/locacao"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
@@ -82,7 +82,7 @@
                 android:layout_below="@id/locacaoTitle"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/staatliches"
+                android:fontFamily="@font/gilroy_extrabold"
                 android:text="@string/valor_locacao"
                 android:textColor="@color/pink"
                 android:textSize="20sp" />
@@ -94,7 +94,7 @@
                 android:layout_below="@id/valor_locacao"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/staatliches"
+                android:fontFamily="@font/gilroy_medium"
                 android:text="@string/stands_e_estruturas"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
@@ -106,7 +106,7 @@
                 android:layout_below="@id/stands_title"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/staatliches"
+                android:fontFamily="@font/gilroy_extrabold"
                 android:text="@string/valor_locacao"
                 android:textColor="@color/pink"
                 android:textSize="20sp" />
@@ -118,7 +118,7 @@
                 android:layout_below="@id/valor_stands"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/staatliches"
+                android:fontFamily="@font/gilroy_medium"
                 android:text="@string/seguranc"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
@@ -130,7 +130,7 @@
                 android:layout_below="@id/seguranca_title"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/staatliches"
+                android:fontFamily="@font/gilroy_extrabold"
                 android:text="@string/valor_locacao"
                 android:textColor="@color/pink"
                 android:textSize="20sp" />
@@ -144,7 +144,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:fontFamily="@font/staatliches"
+                android:fontFamily="@font/gilroy_medium"
                 android:text="@string/gasto_total"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -157,7 +157,7 @@
                 android:layout_marginBottom="30dp"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/staatliches"
+                android:fontFamily="@font/gilroy_extrabold"
                 android:text="@string/valor_total"
                 android:textColor="@color/pink"
                 android:textSize="25sp" />
