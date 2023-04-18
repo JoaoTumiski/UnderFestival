@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.viewpager.widget.ViewPager
 import com.example.underfestival.Adapter.TabAdapter
 import com.example.underfestival.Fragments.Artistas
+import com.example.underfestival.Fragments.Cotas
 import com.example.underfestival.R
 import com.example.underfestival.databinding.ActivityHomeBinding
 import com.google.android.material.tabs.TabLayout
@@ -25,11 +26,11 @@ class Home : AppCompatActivity() {
         supportActionBar?.hide()
 
         val ArtistasFragment = Artistas()
+        val CotasFragment = Cotas()
 
         val fragmentManager: FragmentManager = supportFragmentManager
         val fragmentTransition: FragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransition.replace(R.id.activity_main, ArtistasFragment).commit()
-
         //tab View
 
         tabLayout = findViewById(R.id.tabLayout)
@@ -39,6 +40,7 @@ class Home : AppCompatActivity() {
         tabLayout.addTab(tabLayout.newTab().setText("Projeto"))
         tabLayout.addTab(tabLayout.newTab().setText("Potencial"))
         tabLayout.addTab(tabLayout.newTab().setText("Artistas"))
+        tabLayout.addTab(tabLayout.newTab().setText("Cotas"))
         tabLayout.addTab(tabLayout.newTab().setText("Estrutura"))
         tabLayout.addTab(tabLayout.newTab().setText("Lucro"))
         tabLayout.tabGravity = TabLayout.GRAVITY_CENTER

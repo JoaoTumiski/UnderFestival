@@ -78,4 +78,6 @@ Já falamos do potencial turistico e cultural para a cidade, mas de quantos reai
     <string name="seguidores">Seguidores</string>
     <string name="nome">Nome</string>
     <string name="respiramos_o_underground">Respiramos o underground</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
