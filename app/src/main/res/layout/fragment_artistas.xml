@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fullartist"
+    android:background="@drawable/background"
     tools:context=".Fragments.Artistas">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -13,11 +13,9 @@
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager2"
-            android:layout_width="300dp"
-            android:layout_height="470dp"
-            android:layout_marginTop="70dp"
+            android:layout_width="320dp"
+            android:layout_height="490dp"
             android:background="@drawable/custom_card"
-            android:backgroundTint="@color/pink"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +32,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view_pager2"
-            app:selectedDotColor="@color/pink" />
+            app:selectedDotColor="@color/yelow" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

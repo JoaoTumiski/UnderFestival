@@ -8,11 +8,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbarSize="8dp"
+        android:scrollbarThumbVertical="@drawable/custom_scroll"
+        android:scrollbars="vertical"
+        tools:ignore="UselessParent">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             tools:ignore="UselessParent">
 
             <TextView
@@ -21,19 +25,20 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/custom_title"
-                android:fontFamily="@font/gilroy_extrabold"
+                android:fontFamily="@font/poppins_bold"
                 android:gravity="center"
                 android:text="@string/respiramos_o_underground"
-                android:textColor="@color/white"
+                android:textColor="@color/pink"
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/text_projeto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/title_projeto"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/gilroy_medium"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/poppins_medium"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="@string/projeto"

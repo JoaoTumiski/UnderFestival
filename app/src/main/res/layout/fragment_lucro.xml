@@ -23,23 +23,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/gilroy_medium"
+                android:fontFamily="@font/poppins_medium"
                 android:gravity="center"
-                android:padding="15dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="15dp"
                 android:text="@string/lucrotext"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
-            <TextView
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/gilroy_extrabold"
                 android:layout_below="@id/text_potencial"
-                android:layout_centerHorizontal="true"
-                android:padding="15dp"
-                android:text="@string/custo_total"
-                android:textColor="@color/pink"
-                android:textSize="20sp" />
+                android:src="@drawable/lucro_previsto"
+                tools:ignore="ContentDescription" />
 
 
         </RelativeLayout>

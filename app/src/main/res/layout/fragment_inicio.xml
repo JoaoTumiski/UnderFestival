@@ -3,7 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_tab1"
     tools:context=".Fragments.Inicio">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_tab1"
+        android:scaleType="centerCrop"
+        android:background="@drawable/background_tab1"
+        tools:ignore="ContentDescription" />
 
 </FrameLayout>

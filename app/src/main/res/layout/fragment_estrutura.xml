@@ -20,8 +20,10 @@
 
             <View
                 android:id="@+id/Foto_palco"
-                android:layout_width="350dp"
+                android:layout_width="300dp"
                 android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:elevation="50dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="50dp"
                 android:background="@drawable/palco" />
@@ -34,7 +36,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/gilroy_extrabold"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/estrutura_do_evento"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -46,7 +48,7 @@
                 android:layout_below="@id/title_estrutura"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/gilroy_medium"
+                android:fontFamily="@font/poppins"
                 android:text="@string/Estrutura"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
@@ -58,9 +60,9 @@
                 android:layout_below="@id/text_estrutura"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/gilroy_extrabold"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/valor_estrutura"
-                android:textColor="@color/pink"
+                android:textColor="@color/yelow"
                 android:textSize="20sp" />
 
             <TextView
@@ -70,7 +72,7 @@
                 android:layout_below="@id/valorEstrutura"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/gilroy_medium"
+                android:fontFamily="@font/poppins"
                 android:text="@string/locacao"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
@@ -82,9 +84,9 @@
                 android:layout_below="@id/locacaoTitle"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/gilroy_extrabold"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/valor_locacao"
-                android:textColor="@color/pink"
+                android:textColor="@color/yelow"
                 android:textSize="20sp" />
 
             <TextView
@@ -94,7 +96,7 @@
                 android:layout_below="@id/valor_locacao"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/gilroy_medium"
+                android:fontFamily="@font/poppins"
                 android:text="@string/stands_e_estruturas"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
@@ -106,9 +108,9 @@
                 android:layout_below="@id/stands_title"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/gilroy_extrabold"
-                android:text="@string/valor_locacao"
-                android:textColor="@color/pink"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/valorStands"
+                android:textColor="@color/yelow"
                 android:textSize="20sp" />
 
             <TextView
@@ -118,8 +120,8 @@
                 android:layout_below="@id/valor_stands"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/gilroy_medium"
-                android:text="@string/seguranc"
+                android:fontFamily="@font/poppins"
+                android:text="@string/seguranca"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -130,37 +132,19 @@
                 android:layout_below="@id/seguranca_title"
                 android:layout_marginStart="50dp"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/gilroy_extrabold"
-                android:text="@string/valor_locacao"
-                android:textColor="@color/pink"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/valorSeguranca"
+                android:textColor="@color/yelow"
                 android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/GastoTotalTitle"
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/valor_seguranca"
-                android:layout_centerHorizontal="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:fontFamily="@font/gilroy_medium"
-                android:text="@string/gasto_total"
-                android:textColor="@color/white"
-                android:textSize="25sp" />
+                android:padding="15dp"
+                android:src="@drawable/gasto_total"
+                android:layout_below="@+id/valor_seguranca"
+                tools:ignore="ContentDescription" />
 
-            <TextView
-                android:id="@+id/valor_Total"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/GastoTotalTitle"
-                android:layout_marginBottom="30dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/gilroy_extrabold"
-                android:text="@string/valor_total"
-                android:textColor="@color/pink"
-                android:textSize="25sp" />
 
         </RelativeLayout>
 
