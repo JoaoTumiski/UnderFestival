@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Fragments.LogisticaDeVendas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageIngressos"
+                android:layout_width="260dp"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ingressos" />
+
+            <TextView
+                android:id="@+id/TextLogistica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageIngressos"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/urbano_bold"
+                android:text="@string/logistica_de_venda_de_ingressos"
+                android:textColor="@color/yelow"
+                android:textSize="30sp" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayoutLogistica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextLogistica"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/primeiro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbano_bold"
+                        android:text="1"
+                        android:textColor="@color/yelow"
+                        android:textSize="100sp" />
+
+                    <TextView
+                        android:id="@+id/o"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@id/primeiro"
+                        android:fontFamily="@font/urbano_bold"
+                        android:text="o"
+                        android:textColor="@color/white"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:id="@+id/valorLote1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/TextLote1"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_toEndOf="@id/o"
+                        android:fontFamily="@font/urbano_bold"
+                        android:text="200 reais"
+                        android:textColor="@color/yelow"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/TextLote1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/o"
+                        android:layout_toEndOf="@id/primeiro"
+                        android:fontFamily="@font/urbano_bold"
+                        android:text="LoTe"
+                        android:textColor="@color/white"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/TextLote1"
+                        android:layout_alignStart="@id/primeiro"
+                        android:layout_alignEnd="@+id/valorLote1"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/urbano_bold"
+                        android:gravity="center"
+                        android:text="6.000 pessoas"
+                        android:textColor="@color/yelow"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/segundo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/urbano_bold"
+                        android:text="2"
+                        android:textColor="@color/yelow"
+                        android:textSize="100sp" />
+
+                    <TextView
+                        android:id="@+id/o2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_toEndOf="@id/segundo"
+                        android:fontFamily="@font/urbano_bold"
+                        android:text="o"
+                        android:textColor="@color/white"
+                        android:textSize="35sp" />
+
+                    <TextView
+                        android:id="@+id/valorLote2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/TextLote2"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_toEndOf="@id/o2"
+                        android:fontFamily="@font/urbano_bold"
+                        android:text="300 reais"
+                        android:textColor="@color/yelow"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/TextLote2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/o2"
+                        android:layout_toEndOf="@id/segundo"
+                        android:fontFamily="@font/urbano_bold"
+                        android:text="LoTe"
+                        android:textColor="@color/white"
+                        android:textSize="48sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/TextLote2"
+                        android:layout_alignStart="@id/segundo"
+                        android:layout_alignEnd="@+id/valorLote2"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/urbano_bold"
+                        android:gravity="center"
+                        android:text="4.000 pessoas"
+                        android:textColor="@color/yelow"
+                        android:textSize="20sp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/LayoutLoteTres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayoutLogistica"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/terceiro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbano_bold"
+                    android:text="3"
+                    android:textColor="@color/yelow"
+                    android:textSize="100sp" />
+
+                <TextView
+                    android:id="@+id/o3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_toEndOf="@id/terceiro"
+                    android:fontFamily="@font/urbano_bold"
+                    android:text="o"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/valorLote3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/TextLote3"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toEndOf="@id/o3"
+                    android:fontFamily="@font/urbano_bold"
+                    android:text="450 reais"
+                    android:textColor="@color/yelow"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/TextLote3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/o3"
+                    android:layout_toEndOf="@id/terceiro"
+                    android:fontFamily="@font/urbano_bold"
+                    android:text="LoTe"
+                    android:textColor="@color/white"
+                    android:textSize="48sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/TextLote3"
+                    android:layout_alignStart="@id/terceiro"
+                    android:layout_alignEnd="@+id/valorLote3"
+                    android:fontFamily="@font/urbano_bold"
+                    android:gravity="center"
+                    android:text="2.000 + pessoas"
+                    android:textColor="@color/yelow"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/TextVips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LayoutLoteTres"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urbano_bold"
+                android:text="ingressos vips / backstage"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutVips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextVips"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textVip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/TextCamarote"
+                        android:layout_alignEnd="@id/TextCamarote"
+                        android:fontFamily="@font/urbano_bold"
+                        android:gravity="center"
+                        android:text="vip"
+                        android:textColor="@color/yelow"
+                        android:textSize="100sp" />
+
+                    <TextView
+                        android:id="@+id/valorVip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textVip"
+                        android:layout_alignStart="@+id/TextCamarote"
+                        android:layout_alignEnd="@id/TextCamarote"
+                        android:fontFamily="@font/urbano_bold"
+                        android:gravity="center"
+                        android:text="1500 Reais"
+                        android:textColor="@color/yelow"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/TextCamarote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/valorVip"
+                        android:fontFamily="@font/urbano_bold"
+                        android:gravity="center"
+                        android:text="camarote \n kitunder festival"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textBs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/TextBs"
+                        android:layout_alignEnd="@id/TextBs"
+                        android:fontFamily="@font/urbano_bold"
+                        android:gravity="center"
+                        android:text="BS"
+                        android:textColor="@color/yelow"
+                        android:textSize="100sp" />
+
+                    <TextView
+                        android:id="@+id/valorBs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textBs"
+                        android:layout_alignStart="@+id/TextBs"
+                        android:layout_alignEnd="@id/TextBs"
+                        android:fontFamily="@font/urbano_bold"
+                        android:gravity="center"
+                        android:text="3000 Reais"
+                        android:textColor="@color/yelow"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/TextBs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/valorBs"
+                        android:gravity="center"
+                        android:fontFamily="@font/urbano_bold"
+                        android:text="camarote \n kitunder festival \n backstage"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

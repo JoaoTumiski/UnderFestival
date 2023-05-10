@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Fragments.ComboArtistas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="8dp"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/title_comboArtistas"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urbano_bold"
+                android:gravity="center"
+                android:text="CoMBo De ARTISTaS"
+                android:textColor="@color/yelow"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/textSimulacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_comboArtistas"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/separamos_simulacoes"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TextComboTrap"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSimulacoes"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urbano_bold"
+                android:gravity="center"
+                android:text="CoMBo TRaP"
+                android:textColor="@color/yelow"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/TextArtistasTrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextComboTrap"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urbano_bold"
+                android:gravity="center"
+                android:text="MaTue - TeTo \n MaJoR RD - BoRgeS"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/TextSegundoArtistasTrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextArtistasTrap"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Akarasta - Cjota \n Raffa Moreira - Uclã"
+                android:textColor="@color/yelow"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/valorTrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextSegundoArtistasTrap"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_bold"
+                android:text="400.000 R$"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TextComboFunk"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/valorTrap"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/urbano_bold"
+                android:gravity="center"
+                android:text="CoMBo TRaP"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/TextArtistasFunk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextComboFunk"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urbano_bold"
+                android:gravity="center"
+                android:text="ryan mc - kayblack\n Caveirinha - Sidoka"
+                android:textColor="@color/yelow"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/TextSegundoArtistasFunk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextArtistasFunk"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Salvador - Hyperanhas \n MC Bin Laden - Felp"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/valorFunk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextSegundoArtistasFunk"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="468.000 R$"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

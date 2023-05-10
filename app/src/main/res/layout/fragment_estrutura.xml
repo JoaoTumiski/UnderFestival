@@ -10,8 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbarSize="8dp"
-        android:scrollbarThumbVertical="@drawable/custom_scroll"
-        android:scrollbars="vertical"
+        android:scrollbars="none"
         tools:ignore="UselessParent">
 
         <RelativeLayout

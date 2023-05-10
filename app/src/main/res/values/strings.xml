@@ -41,7 +41,7 @@ Já falamos do potencial turistico e cultural para a cidade, mas de quantos reai
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="EstesFestivais">Estes festivais que já ocorreram já deixaram claro que esta é uma expressão cultural e musical que veio para ficar, movimentando pessoas do Brasil inteiro.</string>
     <string name="meta_receber">Para essa nossa primeira edição temos como meta receber de</string>
-    <string name="Pessoas">10 a \n15 MILL PeSSoaS</string>
+    <string name="Pessoas">10 a \n15 MIL PeSSoaS</string>
     <string name="valorStands">20.000 R$</string>
     <string name="seguranca">Segurança e equipe médica</string>
     <string name="valorSeguranca">10.000 R4</string>
@@ -56,4 +56,6 @@ apresentamos e explorando todo o potencial turístico da cidade das Cataratas,
 deixando a marca da juventude que enfrentou a pandemia.\n
 
 </string>
+    <string name="separamos_simulacoes">Separamos algumas simulações de contratação de pacotes de artistas</string>
+    <string name="logistica_de_venda_de_ingressos">Logistica de venda de ingressos</string>
 </resources>

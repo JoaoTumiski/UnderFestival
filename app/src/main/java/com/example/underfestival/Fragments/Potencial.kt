@@ -46,7 +46,7 @@ class Potencial : Fragment(){
         val spannableString2 = SpannableString(texto2)
 
         val destaques2 = listOf(
-            "MILL PeSSoaS"
+            "MIL PeSSoaS"
 
         )
 
