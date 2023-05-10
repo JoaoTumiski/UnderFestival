@@ -24,11 +24,11 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/poppins_bold"
+                android:fontFamily="@font/urbano_bold"
                 android:gravity="center"
                 android:text="@string/potencial_turistico"
-                android:textColor="@color/pink"
-                android:textSize="20sp" />
+                android:textColor="@color/Red"
+                android:textSize="38sp" />
 
             <TextView
                 android:id="@+id/text_potencial"
@@ -89,9 +89,10 @@
                 android:layout_below="@id/text_receber"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="10dp"
+                android:fontFamily="@font/urbano_bold"
                 android:text="@string/Pessoas"
                 android:textColor="@color/yelow"
-                android:textSize="24sp" />
+                android:textSize="40sp" />
 
             <TextView
                 android:layout_width="match_parent"

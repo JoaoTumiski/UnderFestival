@@ -26,18 +26,22 @@ internal class TabAdapter(fm: FragmentManager, var TotalTabs: Int) :
             }
 
             3 -> {
-                Artistas()
+                Proposta()
             }
 
             4 -> {
-                Cotas()
+                Artistas()
             }
 
             5 -> {
-                Estrutura()
+                Cotas()
             }
 
             6 -> {
+                Estrutura()
+            }
+
+            7 -> {
                 Lucro()
             }
             else -> getItem(position)

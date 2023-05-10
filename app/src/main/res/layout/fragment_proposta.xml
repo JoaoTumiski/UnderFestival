@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Fragments.Projeto">
+    tools:context=".Fragments.Proposta">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,28 +20,28 @@
             tools:ignore="UselessParent">
 
             <TextView
-                android:id="@+id/title_projeto"
+                android:id="@+id/title_proposta"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/urbano_bold"
                 android:gravity="center"
-                android:text="@string/respiramos_o_underground"
-                android:textColor="@color/Red"
+                android:text="@string/propostaTitle"
+                android:textColor="@color/white"
                 android:textSize="38sp" />
 
             <TextView
                 android:id="@+id/text_projeto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/title_projeto"
+                android:layout_below="@+id/title_proposta"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="30dp"
                 android:fontFamily="@font/poppins_medium"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="@string/projeto"
+                android:text="@string/Proposta_text"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -49,6 +49,5 @@
 
 
     </ScrollView>
-
 
 </FrameLayout>

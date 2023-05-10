@@ -12,21 +12,22 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.example.underfestival.R
 
-class Potencial : Fragment(){
+class Proposta : Fragment(){
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_potencial, container, false)
+        val view = inflater.inflate(R.layout.fragment_proposta, container, false)
 
-        val corDestaque = ContextCompat.getColor(requireContext(), R.color.white)
-        val texto = getString(R.string.iniciativa)
+        val corDestaque = ContextCompat.getColor(requireContext(), R.color.yelow)
+        val texto = getString(R.string.Proposta_text)
         val spannableString = SpannableString(texto)
 
         val destaques = listOf(
-            "Under Festival"
-
+            "diversos espaços interativos",
+            "marcas locais",
+            " O nosso festival"
         )
 
         for (destaque in destaques) {
@@ -36,17 +37,17 @@ class Potencial : Fragment(){
             spannableString.setSpan(foregroundColorSpan, startIndex, endIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         }
 
-        val textView = view.findViewById<TextView>(R.id.text_potencial)
+        val textView = view.findViewById<TextView>(R.id.text_projeto)
         textView.text = spannableString
 
-        //destaques 2
+        // destaque 2
 
-        val corDestaque2 = ContextCompat.getColor(requireContext(), R.color.white)
-        val texto2 = getString(R.string.Pessoas)
+        val corDestaque2 = ContextCompat.getColor(requireContext(), R.color.yelow)
+        val texto2 = getString(R.string.propostaTitle)
         val spannableString2 = SpannableString(texto2)
 
         val destaques2 = listOf(
-            "MILL PeSSoaS"
+            "PRoPoSTa é uM FeSTIVaL"
 
         )
 
@@ -57,8 +58,9 @@ class Potencial : Fragment(){
             spannableString2.setSpan(foregroundColorSpan2, startIndex2, endIndex2, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
         }
 
-        val textView2 = view.findViewById<TextView>(R.id.pessoas)
+        val textView2 = view.findViewById<TextView>(R.id.title_proposta)
         textView2.text = spannableString2
+
 
         return view
     }

@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import androidx.viewpager.widget.ViewPager
+import com.airbnb.lottie.LottieAnimationView
 import com.example.underfestival.Adapter.TabAdapter
 import com.example.underfestival.Fragments.Artistas
 import com.example.underfestival.Fragments.Cotas
@@ -39,6 +40,7 @@ class Home : AppCompatActivity() {
         tabLayout.addTab(tabLayout.newTab().setText("Under Festival"))
         tabLayout.addTab(tabLayout.newTab().setText("Projeto"))
         tabLayout.addTab(tabLayout.newTab().setText("Potencial"))
+        tabLayout.addTab(tabLayout.newTab().setText("Proposta"))
         tabLayout.addTab(tabLayout.newTab().setText("Artistas"))
         tabLayout.addTab(tabLayout.newTab().setText("Cotas"))
         tabLayout.addTab(tabLayout.newTab().setText("Estrutura"))

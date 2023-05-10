@@ -95,7 +95,7 @@
         android:layout_height="2dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
-        android:background="@color/details"
+        android:background="@color/yelow"
         app:layout_constraintBottom_toTopOf="@id/ouvintes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,7 +105,7 @@
         android:layout_width="2dp"
         android:layout_height="0dp"
         android:layout_marginStart="5dp"
-        android:background="@color/details"
+        android:background="@color/yelow"
         app:layout_constraintBottom_toTopOf="@id/cache"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/NomeArtista" />
@@ -114,7 +114,7 @@
         android:layout_width="2dp"
         android:layout_height="0dp"
         android:layout_marginEnd="5dp"
-        android:background="@color/details"
+        android:background="@color/yelow"
         app:layout_constraintBottom_toTopOf="@id/cache"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/NomeArtista" />
