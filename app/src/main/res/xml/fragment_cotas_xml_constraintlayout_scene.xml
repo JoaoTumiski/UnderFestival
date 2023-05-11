@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <!-- Transição para imabf -->
+    <Transition
+        motion:constraintSetEnd="@+id/end_imabf"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+
+        <KeyFrameSet>
+            <KeyAttribute
+                motion:motionTarget="@+id/imabf"
+                motion:framePosition="100"
+                android:alpha="1" />
+        </KeyFrameSet>
+
+
+    </Transition>
+
+    <!-- Transição para imaourobf -->
+    <Transition
+        motion:constraintSetEnd="@+id/end_imaourobf"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+
+        <KeyFrameSet>
+            <KeyAttribute
+                motion:motionTarget="@+id/imaourobf"
+                motion:framePosition="100"
+                android:alpha="1" />
+        </KeyFrameSet>
+
+
+    </Transition>
+
+    <!-- Transição para imapratabf -->
+    <Transition
+        motion:constraintSetEnd="@+id/end_imapratabf"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+
+        <KeyFrameSet>
+            <KeyAttribute
+                motion:motionTarget="@+id/imapratabf"
+                motion:framePosition="100"
+                android:alpha="1" />
+        </KeyFrameSet>
+
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/imabf"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            motion:layout_constraintTop_toBottomOf="@+id/title_cotas"/>
+
+        <Constraint
+            android:id="@+id/imaourobf"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            motion:layout_constraintTop_toBottomOf="@id/imabf"/>
+
+        <Constraint
+            android:id="@+id/imapratabf"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            motion:layout_constraintTop_toBottomOf="@id/imaourobf"/>
+
+    </ConstraintSet>
+
+    <!-- ConstraintSet final para imabf -->
+    <ConstraintSet android:id="@+id/end_imabf"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@+id/title_cotas">
+    </ConstraintSet>
+
+    <!-- ConstraintSet final para imaourobf -->
+    <ConstraintSet android:id="@+id/end_imaourobf"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@id/imabf">
+    </ConstraintSet>
+
+    <!-- ConstraintSet final para imapratabf -->
+    <ConstraintSet android:id="@+id/end_imapratabf"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintTop_toBottomOf="@id/imaourobf">
+    </ConstraintSet>
+</MotionScene>

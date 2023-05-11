@@ -1,41 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragments.Cotas">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayoutCotas"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/fragment_cotas_xml_constraintlayout_scene">
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/view_pager2"
-            android:layout_width="320dp"
-            android:layout_height="490dp"
-            android:background="@drawable/custom_card"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
-            android:id="@+id/indicator"
+        <TextView
+            android:id="@+id/title_cotas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            app:dotsColor="@color/details"
-            app:dotsSize="12dp"
-            app:dotsSpacing="6dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/urbano_bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_pager2"
-            app:selectedDotColor="@color/yelow" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Cotas"
+            android:textColor="@color/white"
+            android:textSize="38sp" />
+
+        <ImageView
+            android:id="@+id/imabf"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/bf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_cotas" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="@id/imabf"
+            app:layout_constraintStart_toEndOf="@id/imabf"
+            app:layout_constraintTop_toTopOf="@id/imabf">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="550dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/platina_vantagens"/>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/imaourobf"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/bfouro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imabf" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="@id/imaourobf"
+            app:layout_constraintStart_toEndOf="@id/imaourobf"
+            app:layout_constraintTop_toTopOf="@id/imaourobf">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="550dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ouro_vantagens"/>
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/imapratabf"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/pratabf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imaourobf" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="@id/imapratabf"
+            app:layout_constraintStart_toEndOf="@id/imapratabf"
+            app:layout_constraintTop_toTopOf="@id/imapratabf">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="550dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/prata_vantagens"/>
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
 
 
 </FrameLayout>
