@@ -9,7 +9,7 @@
         motion:duration="1000">
        <KeyFrameSet>
        </KeyFrameSet>
-        <OnClick motion:targetId="@+id/imabf" />
+        <OnClick motion:targetId="@+id/imaourobf" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -20,34 +20,27 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             motion:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="100dp"
-            android:id="@+id/imabf"
-            android:layout_marginStart="10dp"
+            android:layout_marginTop="300dp"
+            android:id="@+id/imaourobf"
+            android:layout_marginStart="20dp"
             motion:layout_constraintStart_toStartOf="parent" />
         <Constraint
-            motion:layout_constraintEnd_toEndOf="@id/ViewPlatina"
+            motion:layout_constraintEnd_toEndOf="@id/ViewOuro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
             android:visibility="visible"
-            motion:layout_constraintStart_toStartOf="@id/ViewPlatina"
-            android:id="@+id/textPlatina"
-            motion:layout_constraintBottom_toTopOf="@+id/imabf" />
+            motion:layout_constraintBottom_toTopOf="@id/ViewOuro"
+            motion:layout_constraintStart_toStartOf="@id/ViewOuro"
+            android:id="@+id/textOuro" />
         <Constraint
-            motion:layout_constraintEnd_toEndOf="@id/ViewPlatina"
+            motion:layout_constraintEnd_toEndOf="@id/ViewOuro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="visible"
-            motion:layout_constraintTop_toBottomOf="@id/ViewPlatina"
-            motion:layout_constraintStart_toStartOf="@id/ViewPlatina"
+            motion:layout_constraintTop_toBottomOf="@id/ViewOuro"
+            motion:layout_constraintStart_toStartOf="@id/ViewOuro"
             android:layout_marginTop="0dp"
-            android:id="@+id/valorPlatina" />
-        <Constraint
-            motion:layout_constraintStart_toEndOf="@id/imabf"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            motion:layout_constraintBottom_toBottomOf="@id/imabf"
-            motion:layout_constraintTop_toTopOf="@id/imabf"
-            android:id="@+id/horizontalScrollView"
-            motion:layout_constraintEnd_toEndOf="parent" />
+            android:id="@+id/valorOuro" />
     </ConstraintSet>
 </MotionScene>

@@ -7,165 +7,270 @@
     android:background="@drawable/background"
     tools:context=".Fragments.Cotas">
 
-    <TextView
-        android:id="@+id/title_cotas"
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/urbano_bold"
-        android:text="Cotas"
-        android:textColor="@color/white"
-        android:textSize="38sp" />
+        android:layout_height="wrap_content">
 
-    <androidx.constraintlayout.motion.widget.MotionLayout
-        android:id="@+id/MotionPlatina"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layoutDescription="@xml/fragment_cotas_xml_motionplatina_scene">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textPlatina"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="platina"
-            android:visibility="invisible"
-            android:textColor="@color/white"
-            android:fontFamily="@font/urbano_bold"
-            android:textSize="28sp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
-
-        <ImageView
-            android:id="@+id/imabf"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="100dp"
-            android:src="@drawable/bf"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <TextView
-            android:id="@+id/valorPlatina"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="R$200.000"
-            android:textSize="15sp"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/yelow"
-            android:visibility="invisible"
-            android:fontFamily="@font/poppins_bold"
-            app:layout_constraintTop_toBottomOf="@id/imabf"
-            app:layout_constraintStart_toStartOf="parent"/>
-
-        <HorizontalScrollView
-            android:id="@+id/horizontalScrollView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:scrollbars="none"
-            app:layout_constraintBottom_toBottomOf="@id/imabf"
-            app:layout_constraintStart_toEndOf="@id/imabf"
-            app:layout_constraintTop_toTopOf="@id/imabf">
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/title_cotas"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urbano_bold"
+                android:text="Cotas"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+
+            <androidx.constraintlayout.motion.widget.MotionLayout
+                android:id="@+id/MotionPlatina"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutDescription="@xml/fragment_cotas_xml_motionplatina_scene">
+
+                <TextView
+                    android:id="@+id/textPlatina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbano_bold"
+                    android:text="platina"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="@id/ViewPlatina"
+                    app:layout_constraintStart_toStartOf="@id/ViewPlatina"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:layout_width="550dp"
+                    android:id="@+id/imabf"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="100dp"
+                    android:src="@drawable/bf"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/ViewPlatina"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/horizontalScrollView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/horizontalScrollView" />
+
+
+                <TextView
+                    android:id="@+id/valorPlatina"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/platina_vantagens" />
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="R$200.000"
+                    android:textColor="@color/yelow"
+                    android:textSize="15sp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="@id/ViewPlatina"
+                    app:layout_constraintStart_toStartOf="@id/ViewPlatina"
+                    app:layout_constraintTop_toBottomOf="@id/ViewPlatina" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    app:layout_constraintBottom_toBottomOf="@id/imabf"
+                    app:layout_constraintStart_toEndOf="@id/imabf"
+                    app:layout_constraintTop_toTopOf="@id/imabf">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="550dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="40dp"
+                            android:src="@drawable/platina_vantagens" />
 
 
-            </LinearLayout>
+                    </LinearLayout>
 
 
-        </HorizontalScrollView>
+                </HorizontalScrollView>
 
-    </androidx.constraintlayout.motion.widget.MotionLayout>
+            </androidx.constraintlayout.motion.widget.MotionLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/MotionOuro"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            <androidx.constraintlayout.motion.widget.MotionLayout
+                android:id="@+id/MotionOuro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutDescription="@xml/fragment_cotas_xml_motionouro_scene">
 
-        <ImageView
-            android:id="@+id/imaourobf"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="300dp"
-            android:src="@drawable/bfouro"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <HorizontalScrollView
-            android:id="@+id/horizontalScrollView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scrollbars="none"
-            app:layout_constraintBottom_toBottomOf="@id/imaourobf"
-            app:layout_constraintStart_toEndOf="@id/imaourobf"
-            app:layout_constraintTop_toTopOf="@id/imaourobf">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textOuro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:fontFamily="@font/urbano_bold"
+                    android:text="Ouro"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@id/ViewOuro"
+                    app:layout_constraintEnd_toEndOf="@id/ViewOuro"
+                    app:layout_constraintStart_toStartOf="@id/ViewOuro" />
 
                 <ImageView
-                    android:layout_width="550dp"
+                    android:id="@+id/imaourobf"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="300dp"
+                    android:src="@drawable/bfouro"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/ViewOuro"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/horizontalScrollView1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/horizontalScrollView1" />
+
+
+                <TextView
+                    android:id="@+id/valorOuro"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ouro_vantagens" />
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="R$100.000"
+                    android:textColor="@color/yelow"
+                    android:textSize="15sp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="@id/ViewOuro"
+                    app:layout_constraintStart_toStartOf="@id/ViewOuro"
+                    app:layout_constraintTop_toBottomOf="@id/ViewOuro" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    app:layout_constraintBottom_toBottomOf="@id/imaourobf"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/imaourobf"
+                    app:layout_constraintTop_toTopOf="@id/imaourobf">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="550dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="40dp"
+                            android:src="@drawable/ouro_vantagens" />
 
 
-            </LinearLayout>
+                    </LinearLayout>
 
 
-        </HorizontalScrollView>
+                </HorizontalScrollView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.motion.widget.MotionLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/MotionPrata"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            <androidx.constraintlayout.motion.widget.MotionLayout
+                android:id="@+id/MotionPrata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutDescription="@xml/fragment_cotas_xml_motionprata_scene">
 
-        <ImageView
-            android:id="@+id/imapratabf"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="500dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:src="@drawable/pratabf"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/textPrata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:fontFamily="@font/urbano_bold"
+                    android:text="Prata"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toTopOf="@id/ViewPrata"
+                    app:layout_constraintEnd_toEndOf="@id/ViewPrata"
+                    app:layout_constraintStart_toStartOf="@id/ViewPrata" />
 
-        <HorizontalScrollView
-            android:id="@+id/horizontalScrollView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scrollbars="none"
-            app:layout_constraintBottom_toBottomOf="@id/imapratabf"
-            app:layout_constraintStart_toEndOf="@id/imapratabf"
-            app:layout_constraintTop_toTopOf="@id/imapratabf">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="550dp"
+                    android:id="@+id/imapratabf"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="500dp"
+                    android:src="@drawable/pratabf"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/ViewPrata"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/horizontalScrollView2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/horizontalScrollView2" />
+
+                <TextView
+                    android:id="@+id/valorPrata"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/prata_vantagens" />
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="R$50.000"
+                    android:textColor="@color/yelow"
+                    android:textSize="15sp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="@id/ViewPrata"
+                    app:layout_constraintStart_toStartOf="@id/ViewPrata"
+                    app:layout_constraintTop_toBottomOf="@id/ViewPrata" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    app:layout_constraintBottom_toBottomOf="@id/imapratabf"
+                    app:layout_constraintStart_toEndOf="@id/imapratabf"
+                    app:layout_constraintTop_toTopOf="@id/imapratabf">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="550dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="40dp"
+                            android:src="@drawable/prata_vantagens" />
 
 
-            </LinearLayout>
+                    </LinearLayout>
 
 
-        </HorizontalScrollView>
+                </HorizontalScrollView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.motion.widget.MotionLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
 
 
 </FrameLayout>
