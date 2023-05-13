@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutartistas"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/artista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Nome"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/artista"
+            android:fontFamily="@font/poppins_bold"
+            android:text="(PRINCIPAL)"
+            android:textColor="@color/yelow"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutartistas"
+        android:text="200 MIL REAIS"
+        android:textAllCaps="true"
+        android:fontFamily="@font/poppins_bold_italic"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

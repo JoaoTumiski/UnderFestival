@@ -6,10 +6,93 @@
     android:background="@drawable/background"
     tools:context=".Fragments.Artistas">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:scrollbarSize="8dp"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/text_Principal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/urbano_bold"
+                android:gravity="center"
+                android:text="Artistas Principais"
+                android:textColor="@color/white"
+                android:textSize="38sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/artistasRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_Principal"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="40dp"/>
+
+            <TextView
+                android:id="@+id/text_Nacional"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/urbano_bold"
+                android:gravity="center"
+                android:layout_below="@id/artistasRecyclerView"
+                android:text="Artistas Nacionais"
+                android:textColor="@color/pink"
+                android:textSize="38sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/artistasRecyclerView2"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_Nacional"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="40dp"/>
+
+            <TextView
+                android:id="@+id/text_Regional"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/urbano_bold"
+                android:gravity="center"
+                android:layout_below="@id/artistasRecyclerView2"
+                android:text="Artistas Regionais"
+                android:textColor="#8bf230"
+                android:textSize="38sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/artistasRecyclerView3"
+                android:layout_width="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_Regional"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="40dp"/>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
 
 </FrameLayout>
